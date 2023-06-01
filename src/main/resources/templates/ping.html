@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ping</title>
+</head>
+<body>
+<h1>Ping Status: <span th:text="${pingStatus}"></span></h1>
+<form action="/ping/start" method="POST">
+    <button type="submit">Start Pinging</button>
+</form>
+<form action="/ping/stop" method="POST">
+    <button type="submit">Stop Pinging</button>
+</form>
+</body>
+</html>
